@@ -1,0 +1,25 @@
+{
+  "name": "dms-cli",
+  "version": "2.0.0",
+  "description": "",
+  "scripts": {
+    "upload": "npm-login-cli http://192.168.10.156:8082/repository/w-npm/ admin admin123 admin@dms365.com && npm publish --registry=http://192.168.10.156:8082/repository/w-npm/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "dms-cli": "bin/index.js"
+  },
+  "author": "lihui",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "download-git-repo": "^1.1.0",
+    "handlebars": "^4.0.12",
+    "inquirer": "^6.2.1",
+    "log-symbols": "^2.2.0",
+    "ora": "^3.0.0",
+    "xmldom": "^0.1.27",
+    "xpath.js": "^1.1.0"
+  }
+}

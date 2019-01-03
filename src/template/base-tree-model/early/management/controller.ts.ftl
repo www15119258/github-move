@@ -12,7 +12,7 @@
     mixins: [BaseTreeModelEarlyManagementDialogAbstractController]
 })
 {{/if}}
-export default class {{names.upperCapital}}ManagmentController extends BaseTreeModelEarlyManagementDialogAbstractController<{{names.upperCapital}}, {{names.upperCapital}}Service> {
+export default class {{names.upperCapital}}ManagementController extends BaseTreeModelEarlyManagementDialogAbstractController<{{names.upperCapital}}, {{names.upperCapital}}Service> {
 
     // 设置实体主键
     {{#if metadata}}

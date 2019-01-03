@@ -15,12 +15,12 @@
         </el-form-item>
                 {{/equals}}
                 {{#equals tsType 'boolean'}}
-        <el-form-item label="{{property.name}}" prop="{{property.id}}">
+        <el-form-item label="{{property.name}}" labelWidth="100px"  prop="{{property.id}}">
             <el-switch v-model="form.{{property.id}}"></el-switch>
         </el-form-item>
                 {{/equals}}
                 {{#equals tsType 'date'}}
-        <el-form-item label="{{property.name}}" prop="{{property.id}}">
+        <el-form-item label="{{property.name}}" labelWidth="100px"  prop="{{property.id}}">
             <el-date-picker v-model="form.{{property.id}}" type="date"
             format="yyyy-MM-dd" value-format="yyyy-MM-dd"></el-date-picker>
         </el-form-item>

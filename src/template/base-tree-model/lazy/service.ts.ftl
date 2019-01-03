@@ -2,6 +2,9 @@
 {{{import}}}
 {{/each}}
 
+/**
+ * version {{package.version}}
+ */
 export default class {{names.upperCapital}}Service extends BaseTreeModelService<{{names.upperCapital}}> {
 
     {{#if metadata}}

@@ -20,6 +20,10 @@ program
   .action(function(options){
     let name = options.name;
     let target = options.dir || '';
+    if (target === '') {
+        console.log('请指定代码生成目录-d');
+        return;
+    }
     let type = options.type || 'base-model';
     let mode = options.mode || (type === 'base-model' ? 'dialog' : 'early');
     let base = (options.base && options.base === 'true') ? true : false;
@@ -37,6 +41,10 @@ program
   .action(function(options){
     let name = options.name;
     let target = options.dir || '';
+    if (target === '') {
+        console.log('请指定代码生成目录-d');
+        return;
+    }
     let base = options.base;
     let o = { name, target, base };
     component.addComponent(o);
@@ -51,6 +59,10 @@ program
   .action(function(options){
     let name = options.name;
     let target = options.dir || '';
+    if (target === '') {
+        console.log('请指定代码生成目录-d');
+        return;
+    }
     let base = options.base;
     let o = { name, target, base };
     form.addComponent(o);

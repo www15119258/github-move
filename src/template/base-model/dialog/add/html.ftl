@@ -1,4 +1,4 @@
-<el-dialog :close-on-click-modal="false" title="新增" :visible.sync="show" :before-close="beforeClose" @close="initForm" append-to-body>
+<el-dialog @open="beforeOpen" :close-on-click-modal="false" title="新增" :visible.sync="show" :before-close="beforeClose" @close="initForm" append-to-body>
     <el-form v-if="form" :model="form" ref="form" :rules="rules">
         {{#if metadata}}
         {{#each metadata.property as |property|}}

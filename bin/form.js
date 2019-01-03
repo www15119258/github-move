@@ -1,4 +1,3 @@
-'use strict'
 const path = require('path');
 const fs = require('fs');
 const fse = require('fs-extra');
@@ -6,6 +5,7 @@ const StringUtil = require('../src/util/string-util');
 const handlebars = require('handlebars');
 const metadataUtil = require('../src/util/metadata-util');
 const configUtil = require('../src/util//config-util');
+const package = require('../package.json');
 
 handlebars.registerHelper('equals', function(v1, v2, options) {
     if (v1 === v2) {
@@ -36,7 +36,7 @@ module.exports = {
         // console.log(metadata);
         let dir = path.resolve(".");
         let target = path.resolve(dir, options.target);
-        let params = { config };
+        let params = { config, package };
         if (metadata) {
             Object.assign(params, { metadata });
         }

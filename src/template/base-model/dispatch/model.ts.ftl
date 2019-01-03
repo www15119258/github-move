@@ -2,6 +2,9 @@
 {{{import}}}
 {{/each}}
 
+/**
+ * version {{package.version}}
+ */
 export default class {{names.upperCapital}} extends BaseModel {
 
     {{#if metadata}}

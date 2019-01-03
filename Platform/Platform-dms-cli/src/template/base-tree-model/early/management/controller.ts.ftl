@@ -2,6 +2,9 @@
 {{{import}}}
 {{/each}}
 
+/**
+ * version {{package.version}}
+ */
 {{#if config.base}}
 @Component
 {{else}}

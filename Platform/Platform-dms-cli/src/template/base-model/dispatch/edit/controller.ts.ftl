@@ -5,13 +5,7 @@
 /**
  * version {{package.version}}
  */
-{{#if config.base}}
 @Component
-{{else}}
-@Component({
-    mixins: [BaseModelEditDispatchAbstractController]
-})
-{{/if}}
 export default class {{names.upperCapital}}EditController extends BaseModelEditDispatchAbstractController<{{names.upperCapital}}, {{names.upperCapital}}Service> {
 
     form: {{names.upperCapital}} = new {{names.upperCapital}}();

@@ -5,13 +5,7 @@
 /**
  * version {{package.version}}
  */
-{{#if config.base}}
 @Component
-{{else}}
-@Component({
-    mixins: [BaseTreeModelLazyEditDialogAbstractController]
-})
-{{/if}}
 export default class {{names.upperCapital}}EditController extends BaseTreeModelLazyEditDialogAbstractController<{{names.upperCapital}}, {{names.upperCapital}}Service> {
 
     pk: string = '{{metadata.pk}}';

@@ -5,13 +5,7 @@
 /**
  * version {{package.version}}
  */
-{{#if config.base}}
 @Component
-{{else}}
-@Component({
-    mixins: [BaseModelManagementDialogAbstractController]
-})
-{{/if}}
 export default class {{names.upperCapital}}ManagementController extends BaseModelManagementDialogAbstractController<{{names.upperCapital}}, {{names.upperCapital}}Service> {
 
     // 设置实体主键

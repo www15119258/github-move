@@ -1,6 +1,6 @@
 {
   "name": "dms-cli",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "",
   "scripts": {
     "upload": "npm-login-cli http://192.168.10.156:8082/repository/w-npm/ admin admin123 admin@dms365.com && npm publish --registry=http://192.168.10.156:8082/repository/w-npm/",

@@ -5,13 +5,7 @@
 /**
  * version {{package.version}}
  */
-{{#if config.base}}
 @Component
-{{else}}
-@Component({
-    mixins: [BaseFormController]
-})
-{{/if}}
 export default class {{names.upperCapital}}Controller extends BaseFormController<{{names.upperCapital}}, {{names.upperCapital}}Service> {
 
     form: {{names.upperCapital}} = new {{names.upperCapital}}();

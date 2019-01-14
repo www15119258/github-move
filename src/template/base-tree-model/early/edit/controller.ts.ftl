@@ -5,13 +5,7 @@
 /**
  * version {{package.version}}
  */
-{{#if config.base}}
 @Component
-{{else}}
-@Component({
-    mixins: [BaseTreeModelEarlyEditDialogAbstractController]
-})
-{{/if}}
 export default class {{names.upperCapital}}EditController extends BaseTreeModelEarlyEditDialogAbstractController<{{names.upperCapital}}, {{names.upperCapital}}Service> {
 
     // 设置实体主键
